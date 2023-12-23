@@ -29,6 +29,7 @@ class OccamNet(nn.Module):
                 current_dim += nb_bases
             else: 
                 current_dim = nb_bases
+                
         # - self.is_none because we don't need to add a None as input to the last layer
         # in case of skip connection
         if self.skip_connections:
